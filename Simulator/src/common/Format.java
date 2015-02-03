@@ -1,5 +1,10 @@
 package common;
 
+/**
+ * @author Tyler Davis
+ * Sample class.
+ */
+
 public class Format {
 
 	public static double format_double(double d, int decimalPlaces) {
