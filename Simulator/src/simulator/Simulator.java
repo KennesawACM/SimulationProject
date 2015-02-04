@@ -8,7 +8,7 @@ package simulator;
  */
 
 public class Simulator {
-	
+
 	public enum Simulator_Type {
 		DISEASE_ONE, DISEASE_TWO, DISEASE_THREE, DISEASE_FOUR, DEFAULT;
 	}

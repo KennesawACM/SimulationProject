@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package simulator;
 
 import simulator.Person.Country;
@@ -42,3 +43,25 @@ public class Run extends Simulator {
 		
 	}
 }
+=======
+package simulator;
+
+/**
+ * @author Tyler Davis
+ * This will initiate the Simulator
+ */
+
+//test
+//test
+//test 3
+
+public class Run extends Simulator {
+
+	public static void main(String[] args) {
+		
+		Simulator sim = getInstance(Simulator_Type.DISEASE_TWO);
+		System.out.println("Sim type: " + sim.get_Type());
+		sim.run_Simulator();
+	}
+}
+>>>>>>> parent of 2af2b29... Added some more to person class and to the run class to show stuff from
