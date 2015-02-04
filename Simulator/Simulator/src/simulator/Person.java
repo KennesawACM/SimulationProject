@@ -73,45 +73,43 @@ public class Person extends Simulator {
 	// sets age
 	public void setAge(int age)
 	{
-		this.age = age;
+		
 	}
 	
 	//gets age
 	public int getAge()
 	{ 
-		return this.age;
+		
 	}
 	
 	// sets countryOfOrigin
 	public Country getCountryOfOrigin()
 	{
-		return this.countryOfOrigin;
+		
 	}
 	
 	//gets countryOfOrigin
 	public void setCountryOfOrigin(Country country)
 	{
-		this.countryOfOrigin = country;
+		
 	}
 	
 	// sets Degree Of Exposure 
 	public void setDegreeOfExposure(double exposureValue)
 	{
-		this.exposureValue = exposureValue;
+		
 	}
 	
 	// gets Degree of Exposure
 	public double getDegreeOfExposure()
 	{
-		return this.exposureValue;
+		
 	}
 	
 
 	public String toString()
 	{
-		return "Country Of Origin: " + this.countryOfOrigin + "\nInfected: " + this.infected 
-				+"\nExposure Value: " + this.exposureValue + "\nSex: " + this.sex + "\nAge: " + this.age 
-				+"\nDiseaseType: " + this.diseaseType + "\n\n";
+		
 	}
 	
 
