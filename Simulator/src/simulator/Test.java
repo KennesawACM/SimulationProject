@@ -7,4 +7,7 @@ public class Test {
 		//test
 		//ok
 	}
+	public Test(){
+		int main;
+	}
 }
