@@ -3,19 +3,9 @@ package simulator;
 public class Person extends Simulator {
 	
 	
-	public Person(){}
-	
-	public Person(Simulator.Simulator_Type diseaseType, boolean infected, String sex, 
-			int age, Country countryOfOrigin, float exposureValue) 
-	{
-		this.diseaseType = diseaseType;
-		this.infected = infected;
-		this.sex = sex;
-		this.age = age;
-		this.countryOfOrigin = countryOfOrigin;
-		this.exposureValue = exposureValue;
+	public Person(){
+		
 	}
-	
 	
 	public Person getInstance() 
 	{
