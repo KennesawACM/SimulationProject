@@ -18,12 +18,7 @@ public class Person extends Simulator {
 	public Person(Simulator.Simulator_Type diseaseType, boolean infected, String sex, 
 			int age, Country countryOfOrigin, float exposureValue) 
 	{
-		this.diseaseType = diseaseType;
-		this.infected = infected;
-		this.sex = sex;
-		this.age = age;
-		this.countryOfOrigin = countryOfOrigin;
-		this.exposureValue = exposureValue;
+		//Removed for testing on Feb 1st
 	}
 	
 	
