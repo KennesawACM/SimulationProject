@@ -8,7 +8,7 @@ public class Test {
 		//test
 		//ok
         //JLB Test Commit
-        //JLB Test Commit 2
+        //JLB Test Commit 3
 	}
 	public Test(){
 		int main;
