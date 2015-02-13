@@ -6,8 +6,6 @@ package simulator;
  * Only use getInstance(type) to instantiate. 
  * This will help maintain uniformity with the constructors.
  */
-
-//test
 public class Simulator {
 	
 	public enum Simulator_Type {
