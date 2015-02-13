@@ -7,7 +7,6 @@ package simulator;
  * This will help maintain uniformity with the constructors.
  */
 
-//test
 public class Simulator {
 	
 	public enum Simulator_Type {
