@@ -6,11 +6,11 @@ public class Logger {
 	private String Log_State;
 	private String Log_Time;
 	private String Log_Message;
-	
+
 	public Logger() {
-		
+
 	}
-	
+
 	public Logger(String msg, String header, String state) {
 		this.Log_Header = header;
 		this.Log_State = state;
@@ -31,7 +31,7 @@ public class Logger {
 	public String getLog_Message() {
 		return Log_Message;
 	}
-	
+
 	public void setLog_Header(String log_Header) {
 		Log_Header = log_Header;
 	}
@@ -43,14 +43,13 @@ public class Logger {
 	public void setLog_Time(String log_Time) {
 		Log_Time = log_Time;
 	}
-	
+
 	public void setLog_Message(String log_Message) {
 		Log_Time = log_Message;
 	}
-	
+
 	@Override
 	public String toString() {
-		
 		return "" + "[TIME]: " + getLog_Time() + ", [STATE]: " + getLog_State() + "\n" +
 				"Log_Message: " + getLog_Message();
 	}
