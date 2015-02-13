@@ -1,6 +1,7 @@
 package simulator;
 
 //test
+//test in class
 
 public class Person extends Simulator {
 	
