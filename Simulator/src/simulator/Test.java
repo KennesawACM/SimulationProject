@@ -7,7 +7,8 @@ public class Test {
 		//different test then marcus 
 		//test
 		//ok
-		//JLB Test Commit
+        //JLB Test Commit
+        //JLB Test Commit 2
 	}
 	public Test(){
 		int main;
