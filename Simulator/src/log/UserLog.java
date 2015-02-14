@@ -1,23 +1,22 @@
 package log;
 
 //Only Should be accessed by Logger class
-//User Logs are here
-class UserLog {
-	//Private Variables 
+//User Logs should go here
+class UserLog extends Logger{
 	private int LogLevel;
-	private String Message, SysTime, MessageID;
+	private String Message, SysTime, MessageID, Header;
 	
 	/**
 	 * @author mr7657
 	 * @category Constructor
 	 * @param level
 	 * @param message
-	 * @param time
+	 * @param header
 	 */
-	public UserLog(int level, String message, String time){
+	public UserLog(int level, String header, String message){
 		this.LogLevel = level;
 		this.Message = message;
-		this.SysTime = time;
+		this.Header = header;
 		
 		//Choose Log Level
 		if(ChooseLevel())
