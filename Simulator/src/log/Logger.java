@@ -1,56 +1,60 @@
 package log;
 
 public class Logger {
-
-	private String Log_Header;
-	private String Log_State;
-	private String Log_Time;
-	private String Log_Message;
-
+	/**
+	 * @author mr7657
+	 * @summary Default
+	 * @category Constructor 
+	 */
 	public Logger() {
-
+		// This creates a new case of log
+		// In this case they do not care to hand addresses,
+		// we will make the default locations
 	}
 
-	public Logger(String msg, String header, String state) {
-		this.Log_Header = header;
-		this.Log_State = state;
+	/**
+	 * @author mr7657
+	 * @summary If there is a location 
+	 * @category Constructor 
+	 * @param location
+	 */
+	public Logger(String location){
+		//If there is a file location to append to
 	}
-
-	public String getLog_Header() {
-		return Log_Header;
+	
+	/**
+	 * @author mr7657
+	 * @summary Creates a user log
+	 * @see VaildLevel(int)
+	 * @param level
+	 * @param header
+	 * @param message
+	 * @return
+	 */
+	public static boolean UserLog(int level, String header, String message) {
+		// Test Value
+		if(!VaildLevel(level))
+			return false;
+		
+		// Send To User Log
+		try {
+			@SuppressWarnings("unused")
+			UserLog user = new UserLog(level, header, message);
+		} catch (Exception e) {
+			return false;
+		}
+		return true;
 	}
-
-	public String getLog_State() {
-		return Log_State;
-	}
-
-	public String getLog_Time() {
-		return Log_Time;
-	}
-
-	public String getLog_Message() {
-		return Log_Message;
-	}
-
-	public void setLog_Header(String log_Header) {
-		Log_Header = log_Header;
-	}
-
-	public void setLog_State(String log_State) {
-		Log_State = log_State;
-	}
-
-	public void setLog_Time(String log_Time) {
-		Log_Time = log_Time;
-	}
-
-	public void setLog_Message(String log_Message) {
-		Log_Time = log_Message;
-	}
-
-	@Override
-	public String toString() {
-		return "" + "[TIME]: " + getLog_Time() + ", [STATE]: " + getLog_State() + "\n" +
-				"Log_Message: " + getLog_Message();
+	
+	/**
+	 * @author mr7657
+	 * @summary Checks to see if the int value is in the valid range
+	 * @param level
+	 * @return
+	 */
+	private static boolean VaildLevel(int level){
+		if(level > 0 && level < 7)
+			return true;
+		return false;
 	}
 }
